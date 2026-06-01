@@ -102,6 +102,17 @@ address {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
 .card__label {
   font-size: 11px;
   font-weight: 700;
