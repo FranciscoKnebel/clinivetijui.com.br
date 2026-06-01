@@ -1,7 +1,8 @@
 {
   "name": "clinivetijui",
-  "private": true,
+  "homepage": "https://clinivetijui.com.br",
+  "author": "Francisco Paiva Knebel <francisco@knebel.inf.br>",
   "scripts": {
-    "start": "npx serve ."
+    "start": "npx serve . --listen 3000"
   }
 }
