@@ -1,19 +1,74 @@
 /* normalize.css v8.0.1 — MIT License — github.com/necolas/normalize.css */
-html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
-body { margin: 0; }
-main { display: block; }
-h1 { font-size: 2em; margin: 0.67em 0; }
-hr { box-sizing: content-box; height: 0; overflow: visible; }
-a { background-color: transparent; }
-img { border-style: none; }
-button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0; }
-button, input { overflow: visible; }
-button, select { text-transform: none; }
-button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
-[hidden] { display: none; }
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+[hidden] {
+  display: none;
+}
 
 /* Base */
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -28,7 +83,9 @@ a {
   transition: opacity 0.2s ease;
 }
 
-a:hover { opacity: 0.8; }
+a:hover {
+  opacity: 0.8;
+}
 
 /* Hero */
 .hero {
@@ -51,9 +108,25 @@ a:hover { opacity: 0.8; }
   margin: 12px 0 0;
 }
 
+.hero__subtitle_2 {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  margin: 12px 0 0;
+}
+
 @keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(1.4); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.4);
+  }
 }
 
 /* Container */
@@ -116,15 +189,25 @@ address {
   font-size: 14px;
 }
 
-.contact-row__label { color: #444; }
+.contact-row__label {
+  color: #444;
+}
 
-.contact-row__value { font-weight: 600; }
+.contact-row__value {
+  font-weight: 600;
+}
 
-.contact-row__value--emergency { color: #c0392b; }
+.contact-row__value--emergency {
+  color: #c0392b;
+}
 
-.contact-row__value--whatsapp { color: #25D366; }
+.contact-row__value--whatsapp {
+  color: #25D366;
+}
 
-.contact-row a { color: inherit; }
+.contact-row a {
+  color: inherit;
+}
 
 /* Separador */
 .divider {
@@ -206,7 +289,9 @@ address {
   font-weight: 600;
 }
 
-.social-btn--facebook { background: #1877F2; }
+.social-btn--facebook {
+  background: #1877F2;
+}
 
 .social-btn--instagram {
   background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
@@ -345,9 +430,23 @@ address {
 
 /* Responsivo */
 @media (max-width: 480px) {
-  .hero { padding: 32px 12px 20px; }
-  .hero__logo { max-width: 240px; }
-  .container { padding: 12px; }
-  .doc-links { flex-direction: column; }
-  .policy-buttons { flex-direction: column; }
+  .hero {
+    padding: 32px 12px 20px;
+  }
+
+  .hero__logo {
+    max-width: 240px;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  .doc-links {
+    flex-direction: column;
+  }
+
+  .policy-buttons {
+    flex-direction: column;
+  }
 }
