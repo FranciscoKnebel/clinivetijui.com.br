@@ -1,0 +1,7 @@
+{
+  "name": "clinivetijui",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
