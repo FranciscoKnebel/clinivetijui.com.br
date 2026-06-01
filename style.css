@@ -259,11 +259,11 @@ a:hover { opacity: 0.8; }
 
 .footer__tech {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer__tech a {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: underline;
 }
 
