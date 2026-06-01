@@ -51,29 +51,9 @@ a:hover { opacity: 0.8; }
   margin: 12px 0 0;
 }
 
-/* Badge "Plantão 24h" */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(144, 190, 68, 0.15);
-  border-radius: 20px;
-  padding: 4px 14px;
-  margin-top: 10px;
-}
-
-.badge__dot {
-  width: 7px;
-  height: 7px;
-  background: #90be44;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.badge__text {
-  color: #90be44;
-  font-size: 11px;
-  font-weight: 700;
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
 }
 
 /* Container */
@@ -113,7 +93,7 @@ address {
   margin-bottom: 0;
 }
 
-.card__label {
+.card .card__label {
   font-size: 11px;
   font-weight: 700;
   color: #90be44;
@@ -168,6 +148,7 @@ address {
   height: 5px;
   background: #90be44;
   border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
 .hours-badge__text {
